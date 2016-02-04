@@ -1,5 +1,7 @@
 import subprocess
+import os
 subprocess.call(["git", "clone", "https://github.iu.edu/sirdas/crest_share_files.git"])
+os.chdir('./crest_share_files')
 subprocess.call(["sudo", "yum", "install", "libxsp-1.0-10.x86_64.rpm"])
 subprocess.call(["sudo", "yum", "install", "libxsp-client-1.0-10.x86_64.rpm"])
 subprocess.call(["sudo", "yum", "install", "libxsp-debuginfo-1.0-10.x86_64.rpm"])
